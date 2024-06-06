@@ -11,157 +11,71 @@
     ></script>
   </head>
   <body class="bg-white">
-    <!-- Header Start -->
-    <header
-      class="absolute top-0 left-0 z-10 flex w-full items-center bg-blue-100 shadow-xl"
+    <!-- Header Section Start -->
+    <section
+      id="nav"
+      class="fixed top-0 left-0 right-0 z-50 px-8 md:px-16 xl:px-40 py-8 bg-white shadow-md rounded-b-md"
     >
-      <div class="container">
-        <div class="relative flex items-center justify-between">
-          <div class="px-10">
-            <a href="#home" class="block py-6 text-2xl font-bold text-blue-900"
-              >alanprayogo</a
-            >
-          </div>
-          <div class="flex items-center px-10">
-            <button
-              id="hamburger"
-              name="hamburger"
-              type="button"
-              class="absolute right-4 block lg:hidden"
-            >
-              <span
-                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
-              ></span>
-            </button>
-
-            <nav
-              id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
-            >
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="mx-8 flex py-2 font-bold text-base text-slate-700 group-hover:text-primary dark:text-white"
-                    >Beranda</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#about"
-                    class="mx-8 flex py-2 font-bold text-base text-slate-700 group-hover:text-primary dark:text-white"
-                    >Tentang Saya</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#blog"
-                    class="mx-8 flex py-2 font-bold text-base text-slate-700 group-hover:text-primary dark:text-white"
-                    >Keterampilan</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#portfolio"
-                    class="mx-8 flex py-2 font-bold text-base text-slate-700 group-hover:text-primary dark:text-white"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#contact"
-                    class="mx-8 flex py-2 font-bold text-base text-slate-700 group-hover:text-primary dark:text-white"
-                    >Contact</a
-                  >
-                </li>
-                <li class="mt-3 flex items-center pl-8 lg:mt-0">
-                  <div class="flex">
-                    <span class="mr-2 text-sm text-slate-500"
-                      ><i class="fa-regular fa-sun fa-xl"></i
-                    ></span>
-                    <input type="checkbox" class="hidden" id="dark-toggle" />
-                    <label for="dark-toggle">
-                      <div
-                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
-                      >
-                        <div
-                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
-                        ></div>
-                      </div>
-                    </label>
-                    <span class="ml-2 text-sm text-slate-500"
-                      ><i class="fa-solid fa-sun fa-xl"></i
-                    ></span>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+      <div class="w-full">
+        <h1 class="font-extrabold text-lg md:text-3xl">alanprayogo</h1>
       </div>
-    </header>
-    <!-- Header End -->
+    </section>
+    <!-- Header Section End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="px-8 md:px-16 xl:px-40 pt-32 md:pt-32">
+    <section id="home" class="px-8 md:px-16 xl:px-40 pt-32 md:pt-36 xl:pt-48">
       <div class="container">
-        <div class="flex flex-col lg:flex-row">
-          <div class="w-full lg:pt-28">
+        <div class="grid grid-cols-1 xl:grid-cols-2 xl:gap-80">
+          <div class="w-full xl:pt-36">
             <h1
-              class="font-semibold text-base md:text-lg xl:text-3xl text-slate-700"
+              class="font-semibold text-base md:text-2xl xl:text-4xl text-slate-700"
             >
               Hallo semua 👋, saya
               <span
-                class="xl:mt-5 block font-bold text-3xl md:text-4xl xl:text-5xl text-blue-900"
+                class="xl:mt-5 block font-bold text-3xl md:text-5xl xl:text-6xl text-blue-900"
                 >Alan Bagus Prayogo</span
               >
             </h1>
             <h2
-              class="md:mb-2 xl:mb-5 font-semibold text-lg md:text-xl xl:text-3xl text-slate-700"
+              class="md:mb-2 xl:mb-5 font-semibold text-lg md:text-3xl xl:text-4xl text-slate-700"
             >
               Web Developer ||
               <span class="text-blue-900">PHP & Laravel</span>
             </h2>
             <p
-              class="mb-5 font-semibold leading-loose xl:text-xl text-slate-700"
+              class="mb-5 font-semibold leading-loose md:text-lg xl:text-2xl text-slate-700"
             >
               Even thought is late, hopefully there's still time
             </p>
 
-            <div class="flex flex-row justify-evenly md:justify-start md:gap-2">
+            <div class="flex flex-row justify-evenly md:justify-start md:gap-4">
               <a
                 href="#"
-                class="w-36 px-5 py-3 bg-slate-700 font-bold text-blue-100 rounded-md flex justify-center items-center hover:opacity-95 hover:shadow-2xl"
+                class="w-36 md:w-48 xl:w-56 py-3 md:py-5 bg-slate-700 font-extrabold md:text-xl xl:text-2xl text-blue-100 rounded-md flex justify-center items-center hover:opacity-95 hover:shadow-2xl"
               >
                 Download cv
               </a>
               <a
                 href="#"
-                class="w-36 py-3 bg-blue-100 font-extrabold text-slate-700 rounded-md flex justify-center items-center hover:opacity-95 hover:shadow-2xl"
+                class="w-36 md:w-48 xl:w-56 py-3 md:py-5 bg-blue-100 font-extrabold md:text-xl xl:text-2xl text-slate-700 rounded-md flex justify-center items-center hover:opacity-95 hover:shadow-2xl"
               >
                 Contact me
               </a>
             </div>
           </div>
-          <div class="relative w-full mt-8 lg:mt-2">
+          <div class="relative w-full mt-8 md:mt-28 xl:mt-2">
             <img
-              class="relative z-10 mx-auto lg:scale-90 xl:scale-110 rounded-md"
+              class="relative z-10 mx-auto md:scale-125 xl:scale-110 rounded-md"
               src="dist/img/alan.png"
               alt="alan"
             />
             <span
-              class="absolute bottom-0 md:bottom-12 xl:bottom-16 left-1/2 -translate-x-1/2 md:scale-125 lg:scale-110 xl:scale-125"
+              class="absolute -top-12 md:-top-20 xl:-top-12 left-1/2 -translate-x-1/2 md:scale-125 lg:scale-110 xl:scale-125"
             >
               <svg
                 width="400"
                 height="400"
-                viewBox="0 0 200 200"
+                viewBox="0 3 200 200"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <defs>
@@ -196,44 +110,100 @@
     </section>
     <!-- Hero Section End -->
 
-    <!-- About Section -->
+    <!-- About Section Start -->
     <section id="about" class="px-8 md:px-16 xl:px-40 pt-16 md:pt-28">
       <div class="container">
-        <div class="w-full">
+        <div class="w-full mb-4">
           <h1
-            class="xl:mt-5 block font-bold text-3xl md:text-4xl xl:text-5xl text-blue-900"
+            class="md:mt-5 block font-bold text-3xl md:text-4xl xl:text-5xl text-blue-900"
           >
             About Me
           </h1>
           <h2
-            class="xl:mb-5 font-semibold text-lg md:text-xl xl:text-3xl text-slate-700"
+            class="md:-mb-5 xl:-mb-20 font-semibold text-lg md:text-2xl xl:text-3xl text-slate-700"
           >
             Web Developer ||
             <span class="text-blue-900">PHP & Laravel</span>
           </h2>
         </div>
-        <div class="flex flex-col lg:flex-row xl:pt-5">
-          <div class="w-full mt-0 lg:mt-0">
+        <div class="grid grid-cols-1 xl:grid-cols-2">
+          <div class="w-full xl:row-span-3">
             <img
-              class="mx-auto lg:scale-90 rounded-md"
-              src="dist/img/white-mask.png"
+              class="mx-auto md:scale-90 xl:scale-75 rounded-md"
+              src="dist/img/work.jpg"
               alt="alan"
             />
           </div>
-          <div class="w-full lg:pt-10 xl:pt-8 mt-5">
+          <div class="w-full xl:pt-20 mt-2">
             <p
-              class="mb-8 md:mb-12 font-semibold leading-loose xl:text-xl text-slate-700 text-justify"
+              class="font-semibold leading-loose md:text-xl xl:text-2xl text-slate-700 text-justify"
             >
               I am a 6th semester student of Applied Informatics Engineering
               with web development skills. I have expertise in developing and
               maintaining websites using html, css, js. Usually I create static
               websites to promote services or wedding invitations and dynamic
               websites using PHP and Laravel framework. I have an interest in
-              programming and want to become a fullstack web developer. In this
-              semester I learned Machine Learning with Python programming
-              language. I also learned to create web applications using MERN,
-              MEVN, and MEAN technology. Java is my favorite programing
-              language.
+              programming and want to become a fullstack web developer.
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row xl:-mt-10">
+            <div class="w-full">
+              <ul class="list-disc pl-5">
+                <li class="mb-1 md:mb-2 xl:mb-6">
+                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                    Age : <span class="font-normal">23</span>
+                  </h4>
+                </li>
+                <li class="mb-1 md:mb-2 xl:mb-6">
+                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                    City : <span class="font-normal">Blitar, Indonesia</span>
+                  </h4>
+                </li>
+                <li class="mb-1 md:mb-2 xl:mb-6">
+                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                    Semester : <span class="font-normal">6</span>
+                  </h4>
+                </li>
+                <li class="mb-1 md:mb-2 xl:mb-6">
+                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                    Semester : <span class="font-normal">6</span>
+                  </h4>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full">
+              <ul class="list-disc pl-5">
+                <li class="mb-1 md:mb-2 xl:mb-6">
+                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                    Phone : <span class="font-normal">081335672568</span>
+                  </h4>
+                </li>
+                <li class="mb-1 md:mb-2 xl:mb-6">
+                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                    Email : <span class="font-normal">alanbp98@gmail.com</span>
+                  </h4>
+                </li>
+                <li class="mb-1 md:mb-2 xl:mb-6">
+                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                    Hobby : <span class="font-normal">Reading & Coding</span>
+                  </h4>
+                </li>
+                <li class="mb-1 md:mb-2 xl:mb-6">
+                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                    Hobby : <span class="font-normal">Reading & Coding</span>
+                  </h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full mt-2 xl:-mt-16">
+            <p
+              class="font-semibold leading-loose md:text-xl xl:text-2xl text-slate-700 text-justify"
+            >
+              In this semester I learned Machine Learning with Python
+              programming language. I also learned to create web applications
+              using MERN, MEVN, and MEAN technology. Java is my favorite
+              programing language.
             </p>
           </div>
         </div>
@@ -241,7 +211,7 @@
     </section>
     <!-- About Section End -->
 
-    <!-- Porto Section -->
+    <!-- Porto Section Start -->
     <section id="porto" class="px-8 xl:px-40 md:px-16 pt-16 md:pt-28">
       <div class="container">
         <div class="w-full">
@@ -264,15 +234,7 @@
               class="mb-8 md:mb-12 font-semibold leading-loose xl:text-xl text-slate-700 text-justify"
             >
               I am a 6th semester student of Applied Informatics Engineering
-              with web development skills. I have expertise in developing and
-              maintaining websites using html, css, js. Usually I create static
-              websites to promote services or wedding invitations and dynamic
-              websites using PHP and Laravel framework. I have an interest in
-              programming and want to become a fullstack web developer. In this
-              semester I learned Machine Learning with Python programming
-              language. I also learned to create web applications using MERN,
-              MEVN, and MEAN technology. Java is my favorite programing
-              language.
+              with web development skills.
             </p>
           </div>
         </div>
