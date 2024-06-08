@@ -14,36 +14,41 @@
     <!-- Header Section Start -->
     <section
       id="nav"
-      class="fixed top-0 left-0 right-0 z-50 px-8 md:px-16 xl:px-40 py-8 bg-white shadow-md rounded-b-md"
+      class="fixed top-0 left-0 right-0 z-50 px-8 md:px-16 xl:px-36 py-8 xl:py-5 bg-white shadow-md rounded-b-md"
     >
       <div class="w-full">
-        <h1 class="font-extrabold text-lg md:text-3xl">alanprayogo</h1>
+        <h1 class="font-extrabold text-lg md:text-3xl xl:text-xl">
+          alanprayogo
+        </h1>
       </div>
     </section>
     <!-- Header Section End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="px-8 md:px-16 xl:px-40 pt-32 md:pt-36 xl:pt-48">
+    <section
+      id="home"
+      class="px-8 md:px-16 xl:px-36 pt-32 md:pt-36 xl:pt-28 xl:h-screen"
+    >
       <div class="container">
-        <div class="grid grid-cols-1 xl:grid-cols-2 xl:gap-80">
-          <div class="w-full xl:pt-36">
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-30">
+          <div class="w-full xl:pt-28">
             <h1
-              class="font-semibold text-base md:text-2xl xl:text-4xl text-slate-700"
+              class="xl:mb-2 font-semibold text-base md:text-2xl text-slate-700"
             >
               Hallo semua 👋, saya
               <span
-                class="xl:mt-5 block font-bold text-3xl md:text-5xl xl:text-6xl text-blue-900"
+                class="block font-bold text-3xl md:text-5xl xl:text-4xl text-blue-900"
                 >Alan Bagus Prayogo</span
               >
             </h1>
             <h2
-              class="md:mb-2 xl:mb-5 font-semibold text-lg md:text-3xl xl:text-4xl text-slate-700"
+              class="md:mb-2 font-semibold text-lg md:text-3xl xl:text-2xl text-slate-700"
             >
               Web Developer ||
               <span class="text-blue-900">PHP & Laravel</span>
             </h2>
             <p
-              class="mb-5 font-semibold leading-loose md:text-lg xl:text-2xl text-slate-700"
+              class="mb-5 font-semibold leading-loose md:text-lg text-slate-700"
             >
               Even thought is late, hopefully there's still time
             </p>
@@ -51,26 +56,26 @@
             <div class="flex flex-row justify-evenly md:justify-start md:gap-4">
               <a
                 href="#"
-                class="w-36 md:w-48 xl:w-56 py-3 md:py-5 bg-slate-700 font-extrabold md:text-xl xl:text-2xl text-blue-100 rounded-md flex justify-center items-center hover:opacity-95 hover:shadow-2xl"
+                class="w-36 md:w-48 xl:w-36 py-3 md:py-5 xl:py-3 bg-slate-700 font-extrabold md:text-xl xl:text-base text-blue-100 rounded-md flex justify-center items-center hover:opacity-95 hover:shadow-2xl"
               >
                 Download cv
               </a>
               <a
                 href="#"
-                class="w-36 md:w-48 xl:w-56 py-3 md:py-5 bg-blue-100 font-extrabold md:text-xl xl:text-2xl text-slate-700 rounded-md flex justify-center items-center hover:opacity-95 hover:shadow-2xl"
+                class="w-36 md:w-48 xl:w-36 py-3 md:py-5 xl:py-3 bg-blue-100 font-extrabold md:text-xl xl:text-base text-slate-700 rounded-md flex justify-center items-center hover:opacity-95 hover:shadow-2xl"
               >
                 Contact me
               </a>
             </div>
           </div>
-          <div class="relative w-full mt-8 md:mt-28 xl:mt-2">
+          <div class="relative w-full mt-10 md:mt-28 xl:mt-2">
             <img
-              class="relative z-10 mx-auto md:scale-125 xl:scale-110 rounded-md"
+              class="relative z-10 mx-auto md:scale-125 xl:scale-90 rounded-md"
               src="dist/img/alan.png"
               alt="alan"
             />
             <span
-              class="absolute -top-12 md:-top-20 xl:-top-12 left-1/2 -translate-x-1/2 md:scale-125 lg:scale-110 xl:scale-125"
+              class="absolute -top-12 md:-top-20 xl:md-top-16 xl:-right-32 left-1/2 -translate-x-1/2 md:scale-125 xl:scale-75"
             >
               <svg
                 width="400"
@@ -111,32 +116,35 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="px-8 md:px-16 xl:px-40 pt-16 md:pt-28">
+    <section
+      id="about"
+      class="px-8 md:px-16 xl:px-36 pt-16 md:pt-28 xl:pt-0 h-screen"
+    >
       <div class="container">
-        <div class="w-full mb-4">
+        <div class="w-full mb-4 xl:mb-8 xl:text-center">
           <h1
-            class="md:mt-5 block font-bold text-3xl md:text-4xl xl:text-5xl text-blue-900"
+            class="md:mt-5 block font-bold text-3xl md:text-4xl xl:text-4xl text-blue-900"
           >
             About Me
           </h1>
           <h2
-            class="md:-mb-5 xl:-mb-20 font-semibold text-lg md:text-2xl xl:text-3xl text-slate-700"
+            class="md:mb-2 font-semibold text-lg md:text-2xl xl:text-xl text-slate-700"
           >
             Web Developer ||
             <span class="text-blue-900">PHP & Laravel</span>
           </h2>
         </div>
         <div class="grid grid-cols-1 xl:grid-cols-2">
-          <div class="w-full xl:row-span-3">
+          <div class="w-64 xl:row-span-3 mx-auto">
             <img
-              class="mx-auto md:scale-90 xl:scale-75 rounded-md"
-              src="dist/img/work.jpg"
+              class="mx-auto md:scale-x-125 xl:scale-110 rounded-md border-2 shadow-2xl"
+              src="dist/img/about.png"
               alt="alan"
             />
           </div>
-          <div class="w-full xl:pt-20 mt-2">
+          <div class="w-full mt-5 xl:-mt-5">
             <p
-              class="font-semibold leading-loose md:text-xl xl:text-2xl text-slate-700 text-justify"
+              class="md:text-xl xl:text-lg leading-loose text-slate-700 text-justify"
             >
               I am a 6th semester student of Applied Informatics Engineering
               with web development skills. I have expertise in developing and
@@ -146,26 +154,21 @@
               programming and want to become a fullstack web developer.
             </p>
           </div>
-          <div class="flex flex-col md:flex-row xl:-mt-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 md:mt-3">
             <div class="w-full">
               <ul class="list-disc pl-5">
-                <li class="mb-1 md:mb-2 xl:mb-6">
-                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                <li class="mb-1 md:mb-2">
+                  <h4 class="font-semibold md:text-xl xl:text-base">
                     Age : <span class="font-normal">23</span>
                   </h4>
                 </li>
-                <li class="mb-1 md:mb-2 xl:mb-6">
-                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
-                    City : <span class="font-normal">Blitar, Indonesia</span>
+                <li class="mb-1 md:mb-2">
+                  <h4 class="font-semibold md:text-xl xl:text-base">
+                    City : <span class="font-normal">Surabaya, Indonesia</span>
                   </h4>
                 </li>
-                <li class="mb-1 md:mb-2 xl:mb-6">
-                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
-                    Semester : <span class="font-normal">6</span>
-                  </h4>
-                </li>
-                <li class="mb-1 md:mb-2 xl:mb-6">
-                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                <li class="mb-1 md:mb-2">
+                  <h4 class="font-semibold md:text-xl xl:text-base">
                     Semester : <span class="font-normal">6</span>
                   </h4>
                 </li>
@@ -173,37 +176,32 @@
             </div>
             <div class="w-full">
               <ul class="list-disc pl-5">
-                <li class="mb-1 md:mb-2 xl:mb-6">
-                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                <li class="mb-1 md:mb-2">
+                  <h4 class="font-semibold md:text-xl xl:text-base">
+                    Hobby : <span class="font-normal">Reading & Coding</span>
+                  </h4>
+                </li>
+                <li class="mb-1 md:mb-2">
+                  <h4 class="font-semibold md:text-xl xl:text-base">
                     Phone : <span class="font-normal">081335672568</span>
                   </h4>
                 </li>
-                <li class="mb-1 md:mb-2 xl:mb-6">
-                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
+                <li class="mb-1 md:mb-2">
+                  <h4 class="font-semibold md:text-xl xl:text-base">
                     Email : <span class="font-normal">alanbp98@gmail.com</span>
-                  </h4>
-                </li>
-                <li class="mb-1 md:mb-2 xl:mb-6">
-                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
-                    Hobby : <span class="font-normal">Reading & Coding</span>
-                  </h4>
-                </li>
-                <li class="mb-1 md:mb-2 xl:mb-6">
-                  <h4 class="font-extrabold md:text-xl xl:text-2xl">
-                    Hobby : <span class="font-normal">Reading & Coding</span>
                   </h4>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="w-full mt-2 xl:-mt-16">
+          <div class="w-full mt-2">
             <p
-              class="font-semibold leading-loose md:text-xl xl:text-2xl text-slate-700 text-justify"
+              class="md:text-xl xl:text-lg leading-loose text-slate-700 text-justify"
             >
               In this semester I learned Machine Learning with Python
               programming language. I also learned to create web applications
-              using MERN, MEVN, and MEAN technology. Java is my favorite
-              programing language.
+              using MERN technology and mobile apps for my thesis. Java is my
+              favorite programing language.
             </p>
           </div>
         </div>
@@ -212,51 +210,139 @@
     <!-- About Section End -->
 
     <!-- Porto Section Start -->
-    <section id="porto" class="px-8 xl:px-40 md:px-16 pt-16 md:pt-28">
+    <section
+      id="porto"
+      class="px-8 md:px-16 xl:px-36 mt-64 md:mt-16 xl:mt-0 xl:h-screen"
+    >
       <div class="container">
-        <div class="w-full">
+        <div class="w-full mb-2 xl:text-center">
           <h1
-            class="xl:mt-5 block font-bold text-3xl md:text-4xl xl:text-5xl text-blue-900"
+            class="xl:mt-5 block font-bold text-3xl md:text-4xl text-blue-900 md:mb-4 xl:-mb-1"
           >
-            My Portfolio
+            Portfolio
           </h1>
         </div>
-        <div class="flex flex-col lg:flex-row xl:pt-5">
-          <div class="w-full mt-0 lg:mt-0">
+        <div class="w-full grid grid-cols-1 xl:grid-cols-2 gap-2">
+          <div
+            class="w-full grid grid-cols-1 xl:grid-cols-2 border-2 rounded-md p-4 mb-3 xl:mb-0 gap-2"
+          >
             <img
-              class="mx-auto lg:scale-90 rounded-md"
-              src="dist/img/white-mask.png"
-              alt="alan"
+              src="dist/img/portfolio/bidhub.png"
+              alt="Bidhub"
+              class="rounded-md"
             />
+            <div class="w-full mt-2">
+              <a href="#"
+                ><h4
+                  class="font-semibold text-xl md:text-2xl xl:text-xl xl:mb-2"
+                >
+                  Bidhub
+                </h4></a
+              >
+              <p class="text-lg md:text-xl xl:text-sm text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                omnis porro vitae provident maxime itaque totam dicta recusandae
+                ipsum tenetur.
+              </p>
+            </div>
           </div>
-          <div class="w-full lg:pt-10 xl:pt-8 mt-5">
-            <p
-              class="mb-8 md:mb-12 font-semibold leading-loose xl:text-xl text-slate-700 text-justify"
-            >
-              I am a 6th semester student of Applied Informatics Engineering
-              with web development skills.
-            </p>
+          <div
+            class="w-full grid grid-cols-1 xl:grid-cols-2 border-2 rounded-md p-4 mb-3 xl:mb-0 gap-2"
+          >
+            <img
+              src="dist/img/portfolio/bidhub.png"
+              alt="Bidhub"
+              class="rounded-md"
+            />
+            <div class="w-full mt-2">
+              <a href="#"
+                ><h4
+                  class="font-semibold text-xl md:text-2xl xl:text-xl xl:mb-2"
+                >
+                  Bidhub
+                </h4></a
+              >
+              <p class="text-lg md:text-xl xl:text-sm text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                omnis porro vitae provident maxime itaque totam dicta recusandae
+                ipsum tenetur.
+              </p>
+            </div>
           </div>
+          <div
+            class="w-full grid grid-cols-1 xl:grid-cols-2 border-2 rounded-md p-4 mb-3 xl:mb-0 gap-2"
+          >
+            <img
+              src="dist/img/portfolio/bidhub.png"
+              alt="Bidhub"
+              class="rounded-md"
+            />
+            <div class="w-full mt-2">
+              <a href="#"
+                ><h4
+                  class="font-semibold text-xl md:text-2xl xl:text-xl xl:mb-2"
+                >
+                  Bidhub
+                </h4></a
+              >
+              <p class="text-lg md:text-xl xl:text-sm text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                omnis porro vitae provident maxime itaque totam dicta recusandae
+                ipsum tenetur.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full grid grid-cols-1 xl:grid-cols-2 border-2 rounded-md p-4 mb-3 xl:mb-0 gap-2"
+          >
+            <img
+              src="dist/img/portfolio/bidhub.png"
+              alt="Bidhub"
+              class="rounded-md"
+            />
+            <div class="w-full mt-2">
+              <a href="#"
+                ><h4
+                  class="font-semibold text-xl md:text-2xl xl:text-xl xl:mb-2"
+                >
+                  Bidhub
+                </h4></a
+              >
+              <p class="text-lg md:text-xl xl:text-sm text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                omnis porro vitae provident maxime itaque totam dicta recusandae
+                ipsum tenetur.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full text-center xl:mt-2">
+          <a href=""
+            ><span
+              class="underline font-semibold text-lg md:text-2xl xl:text-lg"
+              >Show More</span
+            ></a
+          >
         </div>
       </div>
     </section>
     <!-- Porto Section End -->
 
     <!-- Skill Section -->
-    <section id="Skill" class="px-8 xl:px-40 md:px-16 pt-16 md:pt-28">
+    <section id="skill" class="px-8 md:px-16 xl:px-36 mt-6 xl:mt-0 xl:hidden">
       <div class="container">
         <div class="w-full">
           <h1
-            class="mb-5 xl:mt-5 block font-bold text-3xl md:text-4xl xl:text-5xl text-blue-900"
+            class="mb-5 block font-bold text-3xl md:text-4xl xl:text-2xl text-blue-900"
           >
             My Skill
           </h1>
-          <h2
-            class="mb-2 font-semibold text-lg md:text-xl xl:text-3xl text-slate-700"
-          >
+          <h2 class="mb-2 font-semibold text-lg md:text-xl text-slate-700">
             Frontend
           </h2>
-          <div class="grid grid-cols-3 lg:grid-cols-5 gap-4 mb-5">
+          <div
+            class="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-2 mb-5"
+          >
             <div
               class="bg-white border-4 rounded-md border-blue-800 hover:text-blue-600 hover:shadow-xl hover:border-blue-600 flex flex-col items-center"
             >
@@ -308,7 +394,9 @@
           >
             Backend
           </h2>
-          <div class="grid grid-cols-3 lg:grid-cols-5 gap-4 mb-5">
+          <div
+            class="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-2 mb-5"
+          >
             <div
               class="bg-white border-4 rounded-md border-blue-800 hover:text-blue-600 hover:shadow-xl hover:border-blue-600 flex flex-col items-center"
             >
@@ -360,7 +448,9 @@
           >
             Framework
           </h2>
-          <div class="grid grid-cols-3 lg:grid-cols-5 gap-4 mb-5">
+          <div
+            class="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-2 mb-5"
+          >
             <div
               class="bg-white border-4 rounded-md border-blue-800 hover:text-blue-600 hover:shadow-xl hover:border-blue-600 flex flex-col items-center"
             >
@@ -396,6 +486,61 @@
     </section>
     <!-- Skill Section End -->
 
-    <div class="mb-96"></div>
+    <!-- Contect Section Start -->
+    <section
+      id="contact"
+      class="px-8 md:px-16 xl:px-36 mt-12 md:mt-20 xl:mt-20 xl:h-screen"
+    >
+      <div class="container">
+        <div class="w-full mx-auto xl:text-center mb-4">
+          <h1
+            class="md:mt-5 block font-bold text-3xl md:text-4xl text-blue-900"
+          >
+            Contact
+          </h1>
+        </div>
+        <form action="">
+          <div class="w-full md:mx-auto">
+            <div class="w-full mb-2">
+              <label for="name" class="text-base font-bold">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="w-full bg-slate-200 text-slate-700 p-3 rounded-md focus:outline-none focus:ring-blue-500 focus:ring-1 focus:border-blue-500"
+              />
+            </div>
+            <div class="w-full mb-2">
+              <label for="email" class="text-base font-bold">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="w-full bg-slate-200 text-slate-700 p-3 rounded-md focus:outline-none focus:ring-blue-500 focus:ring-1 focus:border-blue-500"
+              />
+            </div>
+            <div class="w-full mb-2">
+              <label for="message" class="text-base font-bold">Message</label>
+              <textarea
+                type="text"
+                id="message"
+                class="w-full bg-slate-200 text-slate-700 p-3 rounded-md focus:outline-none focus:ring-blue-500 focus:ring-1 focus:border-blue-500 h-20"
+              ></textarea>
+            </div>
+            <div class="w-full">
+              <button
+                class="text-base font-semibold text-blue-100 bg-slate-700 py-3 px-8 rounded-md w-full"
+              >
+                Send Message
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contect Section End -->
+
+    <!-- Footer Start -->
+    
+    <!-- Footer End -->
+
   </body>
 </html>
