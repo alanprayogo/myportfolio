@@ -1,20 +1,20 @@
 // Navbar Fixed
-window.onscroll = function() {
-    const header = document.querySelector('header');
-    const FixedNav = header.offsetTop;
+window.onscroll = function () {
+  const header = document.querySelector("header");
+  const fixedNav = header.offsetTop;
 
-    if(window.pageYOffset > FixedNav) {
-        header.classList.add('navbar-fixed');
-    } else {
-        header.classList.remove('navbar-fixed');
-    }
-}
+  if (window.scrollY > fixedNav) {
+    header.classList.add("navbar-fixed");
+  } else {
+    header.classList.remove("navbar-fixed");
+  }
+};
 
 // Hamburger
 const hamburger = document.querySelector("#hamburger");
-const navMenu = document.querySelector('#nav-menu');
+const navMenu = document.querySelector("#nav-menu");
 
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("hamburger-active");
-  navMenu.classList.toggle('hidden');
+  navMenu.classList.toggle("hidden");
 });

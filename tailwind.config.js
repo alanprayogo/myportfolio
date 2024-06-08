@@ -11,6 +11,9 @@ module.exports = {
         lblue: "#0ea5e9",
         dark: "#0f172a",
       },
+      screens: {
+        sm: "430px",
+      },
     },
   },
   plugins: [],
