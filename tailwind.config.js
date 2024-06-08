@@ -2,8 +2,13 @@
 module.exports = {
   content: ["index.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "dblue": "#1e3a8a",
+        "lblue": "#0ea5e9",
+        "dark": "#0f172a",
+      },
+    },
   },
   plugins: [],
 };
-
