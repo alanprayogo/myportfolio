@@ -84,3 +84,28 @@ document.getElementById("downloadCV").addEventListener("click", function () {
   // Hapus elemen <a> yang tidak terlihat dari DOM
   document.body.removeChild(a);
 });
+
+// Contact Me
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Menghentikan perilaku default formulir (refresh halaman)
+
+    var formData = new FormData(this); // Mengambil data formulir
+
+    // Kirim data menggunakan teknik AJAX
+    fetch("proses_kontak.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Terjadi kesalahan saat mengirim pesan.");
+        }
+        alert("Pesan Anda telah terkirim!");
+        document.getElementById("contactForm").reset(); // Mengosongkan formulir setelah pengiriman berhasil
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  });
