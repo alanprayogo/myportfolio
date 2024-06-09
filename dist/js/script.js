@@ -81,3 +81,10 @@ document.getElementById("show-more-btn").addEventListener("click", function () {
   });
   this.style.display = "none";
 });
+
+function copyToClipboard(event, text) {
+  event.preventDefault();
+  navigator.clipboard.writeText(text);
+  // Menampilkan notifikasi bahwa email telah disalin
+  alert("Email berhasil disalin: " + text);
+}
